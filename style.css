@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/1200x/8f/2f/49/8f2f49d24cab49be7a00a88b7804733a.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    margin: 200px auto 0;
+    padding: 40px;
+    background-image: url('https://img.freepik.com/free-photo/vintage-grungy-textured-paper-background_53876-103932.jpg?semt=ais_hybrid&w=740&q=80');
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -5%;
+    width: 110%;
+    height: 30px;
+    background: #6F4E37;
+    border-radius: 15px;
+    box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: -5%;
+    width: 110%;
+    height: 30px;
+    background: #774E32;
+    border-radius: 15px;
+    box-shadow: inset 0 -5px 10px rgba(0,0,0,0.5);
+}
+
+.main h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #0a0a0a;
+    font-weight: 600;
+    border-bottom: 1px solid #454444;
+    padding-bottom: 30px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #0a0a0a;
+    font-weight: 600;
+}
+
+.btn {
+    color: #0a0a0a;
+    background: #C0A891;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #C0A891;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #FFFBF1;
+    color: #161616;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    color: #0a0a0a;
+    background: #C0A891;
+    font-weight: 500;
+    width: 20%;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.correct {
+    background: #afd69b;
+}
+
+.incorrect {
+    background: #d83131;
+}
